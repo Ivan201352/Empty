@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-between mb-3">
+    {% for lift in lifts %}
+    <div class="col-md-5 border card-lift d-flex flex-column justify-content-center mb-3">
+        <div class="card-lift-img d-flex flex-column">
+            <div class="text-center mt-2 mb-3 card-lift-name">
+                <p class="lift-name fs-3 fw-bold mb-0">{{ lift.id }}</p>
+                <p class="lift-address fs-3 fw-bold mb-0">{{ lift.address }}</p>
+                <p class="lift-type fs-3 fw-bold mb-0">{{ lift.type }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock  %}

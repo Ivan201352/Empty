@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Тип лифта</th>
+        <th scope="col">Адрес вызова</th> 
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row"></th>
+        <td>{{current_user.type}}</td>
+        <td>{{current_user.address}}</td>
+    </tr>
+    </tbody>
+</table>
+{% endblock  %}
